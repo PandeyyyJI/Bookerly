@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bookerly-Home</title>
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/searchbar.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/login.css">
+  </head>
+  <body>
+    <!--code for top navigation bar-->
+    <div class="topnav">
+  <a class="active" href="home.html">Home</a>
+  <a href="content.html">Content</a>
+  <a href="trl.html">TRL</a>
+  <a href="aboutus.html">About us</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+
+
+    <!--code for login/signup button.-->
+    <!--signup-->
+    <div id="signup">
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <form class="modal-content" action="/action_page.php">
+        <div class="container">
+          <h1>Sign Up</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+          <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+          </label>
+
+          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+          <div class="clearfix">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script></div>
+
+
+      <!--login button-->
+      <div id="login" class="right">
+      <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id02" class="modal1">
+
+  <form class="modal-content1 animate1" action="/action_page.php" method="post">
+    <div class="imgcontainer1">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close1" title="Close Modal">&times;</span>
+      <img src="img/tutsplus-icon.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container1">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container1" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn1">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+  <!--welcome page-->
+  <div class="wel">
+  <h1 class="grad">Welcome to Bookerly</h1>
+  <p> <h4> Hello visitor!! welcome to our website. We created this website to help both the teacher and students in this era of online education.
+    Our website contains all the study materials at one place along with a TRL feature to maintain a to-read/watch list, or organize your day.
+    This system is designed to help the users find appropriate materials from the internet at one place.The system will be run on a central server
+    with each user having a remote user interface through a web browser to interact with it.The system will allow customers to browse, search, select,
+    and add books to a to-read list.The website will provide book recommendation on the basis of the user’s previous viewed content.The customer
+    will be provided full security system. Anyone can use this website ranging from a child to an old age person.Users can also share their reviews
+    and write comments on the books.Convenience includes the overall ease of finding a useful content, time spent on looking for a particular content,
+     minimization of overall surfing effort . Online library allows the users to read at the own convenience, and to save the burden of carrying books
+      around while traveling time and spend their valuable boot space with important articles. Researchers identify convenience as a ‘fundamental objective’
+     related to online reading . In addition to ease of finding products here and surfing time reduction, consumers can read without time limitation with
+     24-hr access at their convenience because the World Wide Web never closes. We hope you will like our webpage.</h4></p>
+</div>
+
+<!--footer code-->
+<div class="footer">
+  <img src="img/kes.jpg" alt="kes-logo" height="50px">
+  <img src="img/metvy.webp" alt="metvy-logo" height="50px">
+</div>
+  </body>
+</html>
