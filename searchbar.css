@@ -1,0 +1,78 @@
+* {box-sizing: border-box;}
+/*css for top nav searchbar*/
+body {
+  margin: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #388E8E;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.topnav a:hover {
+  background-color: #D1EEEE;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #7DF9FF;
+  color: black;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 2px;
+  font-size: 15px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 0px;
+  margin-right: 1px;
+  background: #ddd;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  width: 30% !important;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
